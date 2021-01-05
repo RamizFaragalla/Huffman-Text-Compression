@@ -1,0 +1,59 @@
+Autonomous boats could be your next ride 
+
+The feverish race to produce the shiniest, safest, speediest self-driving car has spilled over into our wheelchairs, scooters, and even golf carts. Recently, there’s been movement from land to sea, as marine autonomy stands to change the canals of our cities, with the potential to deliver goods and services and collect waste across our waterways. 
+
+In an update to a five-year project from MIT’s Computer Science and Artificial Intelligence Laboratory (CSAIL) and the Senseable City Lab, researchers have been developing the world's first fleet of autonomous boats for the City of Amsterdam, the Netherlands, and have recently added a new, larger vessel to the group: “Roboat II.” Now sitting at 2 meters long, which is roughly a “Covid-friendly” 6 feet, the new robotic boat is capable of carrying passengers.
+
+Alongside the Amsterdam Institute for Advanced Metropolitan Solutions, the team also created navigation and control algorithms to update the communication and collaboration among the boats. 
+
+“Roboat II navigates autonomously using algorithms similar to those used by self-driving cars, but now adapted for water,” says MIT Professor Daniela Rus, a senior author on a new paper about Roboat and the director of CSAIL. “We’re developing fleets of Roboats that can deliver people and goods, and connect with other Roboats to form a range of autonomous platforms to enable water activities.” 
+
+Self-driving boats have been able to transport small items for years, but adding human passengers has felt somewhat intangible due to the current size of the vessels. Roboat II is the “half-scale” boat in the growing body of work, and joins the previously developed quarter-scale Roboat, which is 1 meter long. The third installment, which is under construction in Amsterdam and is considered to be “full scale,” is 4 meters long and aims to carry anywhere from four to six passengers. 
+
+Aided by powerful algorithms, Roboat II autonomously navigated the canals of Amsterdam for three hours collecting data, and returned back to its start location with an error margin of only 0.17 meters, or fewer than 7 inches. 
+
+“The development of an autonomous boat system capable of accurate mapping, robust control, and human transport is a crucial step towards having the system implemented in the full-scale Roboat,” says senior postdoc Wei Wang, lead author on a new paper about Roboat II. “We also hope it will eventually be implemented in other boats in order to make them autonomous.”
+
+Wang wrote the paper alongside MIT Senseable City Lab postdoc Tixiao Shan, research fellow Pietro Leoni, postdoc David Fernandez-Gutierrez, research fellow Drew Meyers, and MIT professors Carlo Ratti and Daniela Rus. The work was supported by a grant from the Amsterdam Institute for Advanced Metropolitan Solutions in the Netherlands. A paper on Roboat II will be virtually presented at the International Conference on Intelligent Robots and Systems. 
+
+To coordinate communication among the boats, another team from MIT CSAIL and Senseable City Lab, also led by Wang, came up with a new control strategy for robot coordination. 
+
+With the intent of self-assembling into connected, multi-unit trains — with distant homage to children’s train sets — “collective transport” takes a different path to complete various tasks. The system uses a distributed controller, which is a collection of sensors, controllers, and associated computers distributed throughout a system), and a strategy inspired by how a colony of ants can transport food without communication. Specifically, there’s no direct communication among the connected robots — only one leader knows the destination. The leader initiates movement to the destination, and then the other robots can estimate the intention of the leader, and align their movements accordingly. 
+
+“Current cooperative algorithms have rarely considered dynamic systems on the water,” says Ratti, the Senseable City Lab director. “Cooperative transport, using a team of water vehicles, poses unique challenges not encountered in aerial or ground vehicles. For example, inertia and load of the vehicles become more significant factors that make the system harder to control. Our study investigates the cooperative control of the surface vehicles and validates the algorithm on that.” 
+
+The team tested their control method on two scenarios: one where three robots are connected in a series, and another where three robots are connected in parallel. The results showed that the coordinated group was able to track various trajectories and orientations in both configurations, and that the magnitudes of the followers’ forces positively contributed to the group — indicating that the follower robots helped the leader. 
+
+Wang wrote a paper about collective transport alongside Stanford University PhD student Zijian Wang, MIT postdoc Luis Mateos, MIT researcher Kuan Wei Huang, Stanford Assistant Professor Mac Schwager, Ratti, and Rus. 
+
+Roboat II
+
+In 2016, MIT researchers tested a prototype that could move “forward, backward, and laterally along a pre-programmed path in the canals.” Three years later, the team’s robots were updated to “shapeshift” by autonomously disconnecting and reassembling into a variety of configurations. 
+
+Now, Roboat II has scaled up to explore transportation tasks, aided by updated research. These include a new algorithm for Simultaneous Localization and Mapping (SLAM), a model-based optimal controller called nonlinear model predictive controller, and an optimization-based state estimator, called moving horizon estimation. 
+
+Here’s how it works: When a passenger pickup task is required from a user at a specific position, the system coordinator will assign the task to an unoccupied boat that’s closest to the passenger. As Roboat II picks up the passenger, it will create a feasible path to the desired destination, based on the current traffic conditions. 
+
+Then, Roboat II, which weighs more than 50 kilograms, will start to localize itself by running the SLAM algorithm and utilizing lidar and GPS sensors, as well as an inertial measurement unit for localization, pose, and velocity. The controller then tracks the reference trajectories from the planner, which updates the path to avoid obstacles that are detected to avoid potential collisions.  
+
+The team notes that the improvements in their control algorithms have made the obstacles feel like less of a giant iceberg since their last update; the SLAM algorithm provides a higher localization accuracy for Roboat, and allows for online mapping during navigation, which they didn’t have in previous iterations. 
+
+Increasing the size of Roboat also required a larger area to conduct the experiments, which began in the MIT pools and subsequently moved to the Charles River, which cuts through Boston and Cambridge, Massachusetts.
+
+While navigating the congested roads of cities alike can lead drivers to feel trapped in a maze, canals largely avoid this. Nevertheless, tricky scenarios in the waterways can still emerge. Given that, the team is working on developing more efficient planning algorithms to let the vessel handle more complicated scenarios, by applying active object detection and identification to improve Roboat’s understanding of its environment. The team plans to estimate disturbances such as currents and waves, to further improve the tracking performance in more noisy waters. 
+
+“All of these expected developments will be incorporated into the first prototype of the full-scale Roboat and tested in the canals of the City of Amsterdam,” says Rus. 
+
+Collective transport
+
+Making our intuitive abilities a reality for machines has been the persistent intention since the birth of the field, from straightforward commands for picking up items to the nuances of organizing in a group. 
+
+One of the main goals of the project is enabling self-assembly to complete the aforementioned tasks of collecting waste, delivering items, and transporting people in the canals — but controlling this movement on the water has been a challenging obstacle. Communication in robotics can often be unstable or have delays, which may worsen the robot coordination. 
+
+Many control algorithms for this collective transport require direct communication, the relative positions in the group, and the destination of the task — but the team’s new algorithm simply needs one robot to know the desired trajectory and orientation. 
+
+Normally, the distributed controller running on each robot requires the velocity information of the connected structure (represented by the velocity of the center of the structure), but this requires that each robot knows the relative position to the center of the structure. In the team’s algorithm, they don’t need the relative position, and each robot simply uses its local velocity instead of the velocity of the center of the structure.
+
+When the leader initiates the movement to the destination, the other robots can therefore estimate the intention of the leader and align their movements. The leader can also steer the rest of the robots by adjusting its input, without any communication between any two robots. 
+
+In the future, the team plans to use machine learning to estimate (online) the key parameters of the robots. They’re also aiming to explore adaptive controllers that allow for dynamic change to the structure when objects are placed on the boat. Eventually, the boats will also be extended to outdoor water environments, where large disturbances such as currents and waves exist.

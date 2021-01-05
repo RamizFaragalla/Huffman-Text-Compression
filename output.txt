@@ -1,0 +1,183 @@
+Input: This is the huffman algorithm.
+Character       Frequency       Huffman Code
+r               1               0000
+t               2               0001
+a               2               0110
+i               3               001
+s               2               0100
+e               1               01010
+o               1               01011
+f               2               0111
+                4               100
+h               4               101
+.               1               11001
+n               1               11000
+l               1               11010
+g               1               11011
+T               1               11100
+u               1               11101
+m               2               1111
+
+original//original1.txt
+encode//encode1.bin
+decode//decode1.bin
+Original file size: 12 bytes
+Encoded file size: 5 bytes
+Compression ratio(orig:encode): 12:5
+Percent change: 58.3333%
+
+original//original2.txt
+encode//encode2.bin
+decode//decode2.bin
+Original file size: 71 bytes
+Encoded file size: 31 bytes
+Compression ratio(orig:encode): 71:31
+Percent change: 56.338%
+
+original//original3.txt
+encode//encode3.bin
+decode//decode3.bin
+Original file size: 1487 bytes
+Encoded file size: 786 bytes
+Compression ratio(orig:encode): 1487:786
+Percent change: 47.1419%
+
+original//original4.txt
+encode//encode4.bin
+decode//decode4.bin
+Original file size: 2896 bytes
+Encoded file size: 1597 bytes
+Compression ratio(orig:encode): 2896:1597
+Percent change: 44.855%
+
+original//original5.txt
+encode//encode5.bin
+decode//decode5.bin
+Original file size: 1064 bytes
+Encoded file size: 583 bytes
+Compression ratio(orig:encode): 1064:583
+Percent change: 45.2068%
+
+original//original6.txt
+encode//encode6.bin
+decode//decode6.bin
+Original file size: 1718 bytes
+Encoded file size: 936 bytes
+Compression ratio(orig:encode): 1718:936
+Percent change: 45.518%
+
+original//original7.txt
+encode//encode7.bin
+decode//decode7.bin
+Original file size: 3365 bytes
+Encoded file size: 1862 bytes
+Compression ratio(orig:encode): 3365:1862
+Percent change: 44.6657%
+
+original//original8.txt
+encode//encode8.bin
+decode//decode8.bin
+Original file size: 9740 bytes
+Encoded file size: 5430 bytes
+Compression ratio(orig:encode): 9740:5430
+Percent change: 44.2505%
+
+original//original9.txt
+encode//encode9.bin
+decode//decode9.bin
+Original file size: 4659 bytes
+Encoded file size: 2569 bytes
+Compression ratio(orig:encode): 4659:2569
+Percent change: 44.8594%
+
+original//original10.txt
+encode//encode10.bin
+decode//decode10.bin
+Original file size: 6797 bytes
+Encoded file size: 3810 bytes
+Compression ratio(orig:encode): 6797:3810
+Percent change: 43.9459%
+
+original//original11.txt
+encode//encode11.bin
+decode//decode11.bin
+Original file size: 20072 bytes
+Encoded file size: 11242 bytes
+Compression ratio(orig:encode): 20072:11242
+Percent change: 43.9916%
+
+original//original12.txt
+encode//encode12.bin
+decode//decode12.bin
+Original file size: 15180 bytes
+Encoded file size: 8333 bytes
+Compression ratio(orig:encode): 15180:8333
+Percent change: 45.1054%
+
+original//original13.txt
+encode//encode13.bin
+decode//decode13.bin
+Original file size: 15213 bytes
+Encoded file size: 8486 bytes
+Compression ratio(orig:encode): 15213:8486
+Percent change: 44.2188%
+
+original//original14.txt
+encode//encode14.bin
+decode//decode14.bin
+Original file size: 14869 bytes
+Encoded file size: 8324 bytes
+Compression ratio(orig:encode): 14869:8324
+Percent change: 44.0178%
+
+original//original15.txt
+encode//encode15.bin
+decode//decode15.bin
+Original file size: 16210 bytes
+Encoded file size: 9083 bytes
+Compression ratio(orig:encode): 16210:9083
+Percent change: 43.9667%
+
+original//original16.txt
+encode//encode16.bin
+decode//decode16.bin
+Original file size: 2279042 bytes
+Encoded file size: 1291155 bytes
+Compression ratio(orig:encode): 2279042:1291155
+Percent change: 43.3466%
+
+original//original17.txt
+encode//encode17.bin
+decode//decode17.bin
+Original file size: 6617121 bytes
+Encoded file size: 3683091 bytes
+Compression ratio(orig:encode): 6617121:3683091
+Percent change: 44.34%
+
+original//original18.txt
+encode//encode18.bin
+decode//decode18.bin
+Original file size: 757913 bytes
+Encoded file size: 438921 bytes
+Compression ratio(orig:encode): 757913:438921
+Percent change: 42.0882%
+
+original//original19.txt
+encode//encode19.bin
+decode//decode19.bin
+Original file size: 43603 bytes
+Encoded file size: 25130 bytes
+Compression ratio(orig:encode): 43603:25130
+Percent change: 42.3664%
+
+original//original20.txt
+encode//encode20.bin
+decode//decode20.bin
+Original file size: 120939 bytes
+Encoded file size: 68597 bytes
+Compression ratio(orig:encode): 120939:68597
+Percent change: 43.2797%
+
+AVERAGE COMPRESSION PERCENT CHANGE: 45.5918%
+
+Press any key to continue . . .
