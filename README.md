@@ -1,8 +1,27 @@
 # Huffman-Text-Compression
-CSC 382 - Analysis of Algorithms
+CSC 382 - Analysis of Algorithms  
 
-Text Compression Results:
+The goal of this class project was to implement the Huffman Algorithm and apply the algorithm for the appliction of text compression.
 
+**Part I: Implement Huffman Algorithm**
+1. Huffman function: takes a set of characters and their frequencies (in a map) and returns a prefix tree. A min heap is used to accomplish this.
+2. Traverse function: takes a prefix tree and returns a map with each character and their corresponding binary code word from the tree.
+
+**Part II: Implement Text Compression**
+1. Encode: given a text file name (string), the function calculates the frequency of each character and stores them in a map. Then, the huffman and traverse functions are called.
+    - using the map that has the characters and their corresponding binary code word (from traverse function), the original file is encoded and the result is stored in a string variable.
+    - Then, I traverse the encoded string 8 characters at a time and store every 8 bits as a character in the encoded file
+    - in the case that the length of the encoded string is not divisible by 8, I append the left over bits by 0s and save to the file
+    - I pass the number of unused bits in the previous step as a parameter to the decode function, so that when decoding, I would know which bits to ignore.
+    
+2. Decode: given a prefix tree, an encoded file, and the number of unused bits, I decode the file.
+    - Once a character is read from the file, it is coverted to its string binary representation and then added to a string variable
+    - Once the file is fully read, I remove any unused bits from the end of the string
+    - Then, I traverse the prefix tree to decode the string and store the results in a file
+    
+**I ran this algorithm for 20 files and calculated the compression ratio for each file.**
+
+**Text Compression Results:**
 
 |**Original File**|**Encoded File**|**Compression Ratio (orig:encode in bytes)**|<p>**Percent Change**</p><p>**(%)**</p>|
 | :-: | :-: | :-: | :-: |
