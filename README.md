@@ -46,4 +46,4 @@ The goal of this class project was to implement the Huffman Algorithm and apply 
 |original19|encode19|43603: 25130|42.3664%|
 |original20|encode20|120939:68597|43.2797%|
 
-AVERAGE COMPRESSION PERCENT CHANGE: 45.5918%
+**AVERAGE COMPRESSION PERCENT CHANGE: 45.5918%**
