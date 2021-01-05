@@ -1,0 +1,35 @@
+maps:
+// construct
+unordered_map<int, int> map;
+
+// add elem
+map[2] = 3;
+
+// contains key
+map.count(key) != 0
+
+// iterate
+for (auto i : map) cout << i.first << i.second;
+
+sets:
+// construct
+unordered_set<int> set;
+
+// add
+set.insert(x);
+
+// contains
+set.count(x) != 0
+
+arrays:
+// are not given value of 0 in initialization
+int A[128] = {0};
+
+vectors:
+// constructor
+vector<int> a(vectorSize);
+vector<int> b; // empty container
+
+// insert and erase to add and remove
+
+https://app.codility.com/c/feedback/E39ZH3-N4J/
