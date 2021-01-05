@@ -19,7 +19,7 @@ The goal of this class project was to implement the Huffman Algorithm and apply 
     - Once the file is fully read, I remove any unused bits from the end of the string
     - Then, I traverse the prefix tree to decode the string and store the results in a file
     
-**I ran this algorithm for 20 files and calculated the compression ratio for each file.**
+**Output: I ran this algorithm for 20 files and calculated the compression ratio for each file.**
 
 **Text Compression Results:**
 
