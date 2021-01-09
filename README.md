@@ -1,7 +1,7 @@
 # Huffman-Text-Compression
 CSC 382 - Analysis of Algorithms  
 
-The goal of this class project was to implement the Huffman Algorithm and apply the algorithm for the appliction of text compression.
+The goal of this class project was to implement the Huffman Algorithm and apply the algorithm for the application of text compression.
 
 **Part I: Implement Huffman Algorithm**
 1. Huffman function: takes a set of characters and their frequencies (in a map) and returns a prefix tree. A min heap is used to accomplish this.
